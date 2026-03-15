@@ -1,0 +1,19 @@
+[
+  {"_benchmark_name": "in1k_rr8",   "random_input_len": 1024,  "random_output_len": 256, "request_rate": 8},
+  {"_benchmark_name": "in1k_rr16",  "random_input_len": 1024,  "random_output_len": 256, "request_rate": 16},
+  {"_benchmark_name": "in1k_rr32",  "random_input_len": 1024,  "random_output_len": 256, "request_rate": 32},
+  {"_benchmark_name": "in1k_rr64",  "random_input_len": 1024,  "random_output_len": 256, "request_rate": 64},
+  {"_benchmark_name": "in1k_rr128", "random_input_len": 1024,  "random_output_len": 256, "request_rate": 128},
+
+  {"_benchmark_name": "in8k_rr8",   "random_input_len": 8192,  "random_output_len": 256, "request_rate": 8},
+  {"_benchmark_name": "in8k_rr16",  "random_input_len": 8192,  "random_output_len": 256, "request_rate": 16},
+  {"_benchmark_name": "in8k_rr32",  "random_input_len": 8192,  "random_output_len": 256, "request_rate": 32},
+  {"_benchmark_name": "in8k_rr64",  "random_input_len": 8192,  "random_output_len": 256, "request_rate": 64},
+  {"_benchmark_name": "in8k_rr128", "random_input_len": 8192,  "random_output_len": 256, "request_rate": 128},
+
+  {"_benchmark_name": "in32k_rr8",   "random_input_len": 32768, "random_output_len": 256, "request_rate": 8},
+  {"_benchmark_name": "in32k_rr16",  "random_input_len": 32768, "random_output_len": 256, "request_rate": 16},
+  {"_benchmark_name": "in32k_rr32",  "random_input_len": 32768, "random_output_len": 256, "request_rate": 32},
+  {"_benchmark_name": "in32k_rr64",  "random_input_len": 32768, "random_output_len": 256, "request_rate": 64},
+  {"_benchmark_name": "in32k_rr128", "random_input_len": 32768, "random_output_len": 256, "request_rate": 128}
+]

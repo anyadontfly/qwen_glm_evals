@@ -1,0 +1,19 @@
+[
+  {"_benchmark_name": "in1k_mc8",   "random_input_len": 1024,  "random_output_len": 256, "max_concurrency": 8},
+  {"_benchmark_name": "in1k_mc16",  "random_input_len": 1024,  "random_output_len": 256, "max_concurrency": 16},
+  {"_benchmark_name": "in1k_mc32",  "random_input_len": 1024,  "random_output_len": 256, "max_concurrency": 32},
+  {"_benchmark_name": "in1k_mc64",  "random_input_len": 1024,  "random_output_len": 256, "max_concurrency": 64},
+  {"_benchmark_name": "in1k_mc128", "random_input_len": 1024,  "random_output_len": 256, "max_concurrency": 128},
+
+  {"_benchmark_name": "in8k_mc8",   "random_input_len": 8192,  "random_output_len": 256, "max_concurrency": 8},
+  {"_benchmark_name": "in8k_mc16",  "random_input_len": 8192,  "random_output_len": 256, "max_concurrency": 16},
+  {"_benchmark_name": "in8k_mc32",  "random_input_len": 8192,  "random_output_len": 256, "max_concurrency": 32},
+  {"_benchmark_name": "in8k_mc64",  "random_input_len": 8192,  "random_output_len": 256, "max_concurrency": 64},
+  {"_benchmark_name": "in8k_mc128", "random_input_len": 8192,  "random_output_len": 256, "max_concurrency": 128},
+
+  {"_benchmark_name": "in32k_mc8",   "random_input_len": 32768, "random_output_len": 256, "max_concurrency": 8},
+  {"_benchmark_name": "in32k_mc16",  "random_input_len": 32768, "random_output_len": 256, "max_concurrency": 16},
+  {"_benchmark_name": "in32k_mc32",  "random_input_len": 32768, "random_output_len": 256, "max_concurrency": 32},
+  {"_benchmark_name": "in32k_mc64",  "random_input_len": 32768, "random_output_len": 256, "max_concurrency": 64},
+  {"_benchmark_name": "in32k_mc128", "random_input_len": 32768, "random_output_len": 256, "max_concurrency": 128}
+]

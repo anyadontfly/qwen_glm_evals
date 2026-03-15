@@ -1,0 +1,49 @@
+CUDA_VISIBLE_DEVICES=3 vllm bench sweep serve \
+  --serve-cmd "vllm serve zai-org/GLM-4.7-Flash --served-model-name zai-org/GLM-4.7-Flash --max-model-len 200k" \
+  --bench-cmd "vllm bench serve --model zai-org/GLM-4.7-Flash --dataset-name random --num-prompts 128" \
+  --bench-params setups/inp_out_len.json \
+  --output-dir results_h100_cu126 \
+  --experiment-name glm47-flash_inp_out_len_sweep
+
+CUDA_VISIBLE_DEVICES=3 vllm bench sweep serve \
+  --serve-cmd "vllm serve Qwen/Qwen3.5-9B --served-model-name Qwen/Qwen3.5-9B --max-model-len 200k" \
+  --bench-cmd "vllm bench serve --model Qwen/Qwen3.5-9B --dataset-name random --num-prompts 128" \
+  --bench-params setups/inp_out_len.json \
+  --output-dir results_h100_cu126 \
+  --experiment-name qwen35-9b_inp_out_len_sweep
+
+
+
+CUDA_VISIBLE_DEVICES=0 vllm bench sweep serve \
+  --serve-cmd "vllm serve Qwen/Qwen3.5-9B --served-model-name Qwen/Qwen3.5-9B --port 8001 --max-model-len 200000" \
+  --bench-cmd "vllm bench serve --model Qwen/Qwen3.5-9B --host 127.0.0.1 --port 8001 --dataset-name random --num-prompts 128" \
+  --bench-params setups/inp_len_rr.json \
+  --num-runs 3 \
+  --output-dir results_h100_cu126 \
+  --experiment-name qwen35-9b_rr_sweep_fixed
+
+CUDA_VISIBLE_DEVICES=1 vllm bench sweep serve \
+  --serve-cmd "vllm serve zai-org/GLM-4.7-Flash --served-model-name zai-org/GLM-4.7-Flash --port 8002 --max-model-len 200000" \
+  --bench-cmd "vllm bench serve --model zai-org/GLM-4.7-Flash --host 127.0.0.1 --port 8002 --dataset-name random --num-prompts 128" \
+  --bench-params setups/inp_len_rr.json \
+  --num-runs 3 \
+  --output-dir results_h100_cu126 \
+  --experiment-name glm47-flash_rr_sweep
+
+
+
+CUDA_VISIBLE_DEVICES=0 vllm bench sweep serve \
+  --serve-cmd "vllm serve Qwen/Qwen3.5-9B --served-model-name Qwen/Qwen3.5-9B --port 8003 --max-model-len 200000" \
+  --bench-cmd "vllm bench serve --model Qwen/Qwen3.5-9B --host 127.0.0.1 --port 8003 --dataset-name random --num-prompts 128" \
+  --bench-params setups/inp_len_mc.json \
+  --num-runs 3 \
+  --output-dir results_h100_cu126 \
+  --experiment-name qwen35-9b_mc_sweep
+
+CUDA_VISIBLE_DEVICES=1 vllm bench sweep serve \
+  --serve-cmd "vllm serve zai-org/GLM-4.7-Flash --served-model-name zai-org/GLM-4.7-Flash --port 8004 --max-model-len 200000" \
+  --bench-cmd "vllm bench serve --model zai-org/GLM-4.7-Flash --host 127.0.0.1 --port 8004 --dataset-name random --num-prompts 128" \
+  --bench-params setups/inp_len_mc.json \
+  --num-runs 3 \
+  --output-dir results_h100_cu126 \
+  --experiment-name glm47-flash_mc_sweep

@@ -1,0 +1,1 @@
+uv run eval_mmlu_pro.py -s <result save dir> -m <model name>
