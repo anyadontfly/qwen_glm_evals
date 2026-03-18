@@ -1,0 +1,7 @@
+[
+  {"_benchmark_name": "burst_0.1", "burstiness": 0.1},
+  {"_benchmark_name": "burst_0.2", "burstiness": 0.2},
+  {"_benchmark_name": "burst_0.5", "burstiness": 0.5},
+  {"_benchmark_name": "burst_0.7", "burstiness": 0.7},
+  {"_benchmark_name": "burst_1.0", "burstiness": 1.0}
+]

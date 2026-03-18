@@ -1,0 +1,7 @@
+[
+  {"_benchmark_name": "mc1",  "max_concurrency": 1},
+  {"_benchmark_name": "mc2",  "max_concurrency": 2},
+  {"_benchmark_name": "mc4",  "max_concurrency": 4},
+  {"_benchmark_name": "mc8",  "max_concurrency": 8},
+  {"_benchmark_name": "mc16", "max_concurrency": 16}
+]

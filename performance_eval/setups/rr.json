@@ -1,0 +1,11 @@
+[
+  {"_benchmark_name": "rr_1",  "request_rate": 1},
+  {"_benchmark_name": "rr_2",  "request_rate": 2},
+  {"_benchmark_name": "rr_4",  "request_rate": 4},
+  {"_benchmark_name": "rr_6",  "request_rate": 6},
+  {"_benchmark_name": "rr_8",  "request_rate": 8},
+  {"_benchmark_name": "rr_10", "request_rate": 10},
+  {"_benchmark_name": "rr_12", "request_rate": 12},
+  {"_benchmark_name": "rr_14", "request_rate": 14},
+  {"_benchmark_name": "rr_16", "request_rate": 16}
+]

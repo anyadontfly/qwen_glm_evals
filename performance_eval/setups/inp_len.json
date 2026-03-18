@@ -1,17 +1,6 @@
 [
-  {
-    "_benchmark_name": "in1k_out256",
-    "random_input_len": 1024,
-    "random_output_len": 256
-  },
-  {
-    "_benchmark_name": "in8k_out256",
-    "random_input_len": 8192,
-    "random_output_len": 256
-  },
-  {
-    "_benchmark_name": "in32k_out256",
-    "random_input_len": 32768,
-    "random_output_len": 256
-  }
+  {"_benchmark_name": "in128",  "random_input_len": 128},
+  {"_benchmark_name": "in512",  "random_input_len": 512},
+  {"_benchmark_name": "in2048", "random_input_len": 2048},
+  {"_benchmark_name": "in4096", "random_input_len": 4096}
 ]

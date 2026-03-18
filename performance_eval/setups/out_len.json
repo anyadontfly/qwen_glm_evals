@@ -1,0 +1,7 @@
+[
+  {"_benchmark_name": "out32",  "random_output_len": 32},
+  {"_benchmark_name": "out64",  "random_output_len": 64},
+  {"_benchmark_name": "out128", "random_output_len": 128},
+  {"_benchmark_name": "out256", "random_output_len": 256},
+  {"_benchmark_name": "out512", "random_output_len": 512}
+]
